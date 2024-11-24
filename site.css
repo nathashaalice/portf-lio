@@ -1,0 +1,357 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+/* Flex Geral */
+.flex{
+    display: flex;
+}
+header .btn-social-topo button {
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #e4bf46;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #ffe07b;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #e4bf46;
+}
+
+    /* GOOGLE FONTES */
+    .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    .poppins-extralight {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    .poppins-thin-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+    }
+
+    .poppins-extralight-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+    }
+
+    .poppins-light-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    .poppins-regular-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .poppins-medium-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    .poppins-semibold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    .poppins-bold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .poppins-extrabold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+    }
+
+    .poppins-black-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+    }
+
+    /* FIM DO GOOGLE FONTS */
+}
+
+body {
+    background-color: #000;
+    height: 100ph;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ESTILO HEARDER */
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    color: #a6a6a6;
+}
+
+/* quando o usuário passar o mouse... */
+header nav ul li:hover {
+    color: #fff;
+    transform: scale(1.1);
+    transition: 0.2s;
+
+}
+
+/* tirar bolinha da lista */
+header nav ul {
+    list-style: none;
+}
+
+/* colocar lista na horizontal uma do lado da outra */
+header nav ul li {
+    display: inline-block;
+    /* separar os textos */
+    padding: 0 40px;
+    cursor: pointer;
+}
+
+
+/* Topo do Site */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+/* para centralizar o texto e a imagem */
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 50px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #e4bf46;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 20px 0px;
+    font-size: 20px;
+}
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+/* animações do CSS */
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
+}
+section.especialidades .flex{
+    gap: 60px;
+}
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    
+    box-shadow: 0 0 20px #ddddddd8;
+}
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #e4bf46;
+}
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+/* SOBRE */
+section.sobre{
+    padding: 40px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre{
+    color: #fff;
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+    color: #e4bf46;
+    display: block;
+}
+.sobre .txt-sobre p{
+    margin:10px 0;
+    font-size: 18px;
+    text-align: justify;
+}
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e4bf46;
+    font-size: 26px;
+    cursor: pointer;
+    margin: 0 15px;
+}
+/* ESTILO FORMULÁRIO DE CONTATO */
+section.formulario{
+    padding: 80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #454545b6;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 120px;
+    background-color: #e4bf46;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+/* ESTILO DO RODAPÉ */
+footer{
+    padding: 40px 10%;
+    box-shadow: 0 0 40px 10px #3f3f3f;
+}
+footer .flex{
+    justify-content: space-between;
+}
+footer .line-footer{
+    padding: 10px 0;
+}
+footer .line-footer p i{
+    color: #e4bf46;
+    font-size: 22px;
+}
+footer .line-footer a{
+    color: #fff;
+}
+.borda{
+    border-top: 2px solid #e4bf46;
+}
+
